@@ -14,16 +14,40 @@
   <h1 style = "text-align: center;" ><b>Computer science</b></h1>
   </div>
   
+ 
+  
+
+
   <div class="w3-bar w3-black w3-card">
   <div class="w3-dropdown-hover w3-hide-small">
-  <button class="w3-padding-large w3-button" title="More">News</button>
+  <button class="w3-padding-large w3-button" title="More">ข้อมูลนักศึกษา</button>
   <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="https://www.facebook.com/paboatindy" class="w3-bar-item w3-button">facebook</a>
-        <a href="https://medium.com/@paboatindy55" class="w3-bar-item w3-button">Medium</a>  
+         <a href=""  class="w3-bar-item w3-button" onClick="myfunction()" >ชั้นปีที่ 1</a>
+         <a href="" class="w3-bar-item w3-button" onClick="myfunction1()" >ชั้นปีที่ 2</a>
   </div>
   </div>
   </div>
+  
+  
 
+  <script>
+        function myfunction() {
+
+          window.open("Student.php")
+          
+        }
+
+        </script>
+
+        
+  <script>
+        function myfunction1() {
+
+          window.open("Student_1.php")
+          
+        }
+
+        </script>
    
 </div>
 </body>
