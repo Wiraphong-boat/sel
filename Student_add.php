@@ -1,18 +1,10 @@
-<?php require 'index.php'; ?>
-<?php require 'connectdb.php'; ?>
+<?php require 'index.php'; require 'connectdb.php'; 
 
 
-<?php
-                                        $sql_cs_activity = "SELECT * FROM cs_activity";
-                                        $res_cs_activity = pg_query($db, $sql_cs_activity);
-                                    
-                                        while($row_cs_activity = pg_fetch_array($res_cs_activity))
-                                        {
-                                            $ac_name = $row_cs_activity['ac_name'];
-                                            $ac_id = $row_cs_activity['ac_id'];
-                                            echo "<option value='$ac_name'>$ac_id</option>";
-                                        }
-                                    ?>
+            
+?>
+
+
 
 
 <!DOCTYPE html>
@@ -22,22 +14,20 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   
     <body>
-    <form action="index.php" method="post"></form>
+    <form action="index.php" method="post" id = "from" enctype = "multipart/from-data " >
+        
+        
+        
+        
         <div class="container">
             <h2>กรอกข้อมูลกิจกรรม</h2>
             <br>
                                 
-                            </select>
+            </select>
                     </div>
                 </div>
 
-                <!-- data_name_eng -->
-                <div class="form-group">
-                    id :
-                    <div class="col-md-10">
-                        <input name="ac_id" type="text" class="form-control">
-                    </div>
-                </div>
+              
     
   <!-- data_name_eng -->
   <div class="form-group">
