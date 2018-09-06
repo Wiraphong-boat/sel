@@ -1,0 +1,18 @@
+ <?php $ac_name= $_POST['ac_name'];
+  
+        
+        //คำสั่ง sql
+        $sql = "INSERT INTO cs_activity (ac_name) 
+                VALUES ('$ac_name')";
+        $result = pg_query($db, $sql);
+        
+        //check 
+        if($result){
+            //echo "Complete";
+            header("Location: Student_add.php");
+        } else {
+            echo pg_last_error($db);
+        }
+        
+        pg_close($db);
+
